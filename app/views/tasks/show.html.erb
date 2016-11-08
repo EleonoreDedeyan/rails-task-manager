@@ -1,0 +1,9 @@
+<h1>Show Tasks</h1>
+<ul>
+  <li>
+<h2><%= @task.id %> - <%= @task.name.capitalize %></h2>
+  <p>Description: <%= @task.description %></p>
+  <p>Status: <%= @task.status %></p>
+  </li>
+</ul>
+<%= link_to 'Go back', tasks_path %>
